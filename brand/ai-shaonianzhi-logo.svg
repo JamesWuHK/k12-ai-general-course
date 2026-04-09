@@ -1,0 +1,53 @@
+<svg width="900" height="300" viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoBlue" x1="70" y1="16" x2="744" y2="254" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8CEFFF"/>
+      <stop offset="0.32" stop-color="#2EC3FF"/>
+      <stop offset="0.7" stop-color="#0B84DC"/>
+      <stop offset="1" stop-color="#075FBF"/>
+    </linearGradient>
+    <linearGradient id="logoHighlight" x1="180" y1="40" x2="660" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D3FAFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#85E7FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="900" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dx="0" dy="12"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.027451 0 0 0 0 0.231373 0 0 0 0 0.466667 0 0 0 0.22 0"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="shape"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <text
+      x="28"
+      y="116"
+      font-size="126"
+      font-weight="900"
+      font-style="italic"
+      font-family="Avenir Next, Helvetica Neue, Arial, sans-serif"
+      letter-spacing="-5"
+      fill="url(#logoBlue)"
+      stroke="#43CCFF"
+      stroke-width="6"
+      paint-order="stroke fill"
+    >AI</text>
+    <text
+      x="190"
+      y="226"
+      font-size="154"
+      font-weight="900"
+      font-style="italic"
+      font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif"
+      letter-spacing="-10"
+      fill="url(#logoBlue)"
+      stroke="#29BDF5"
+      stroke-width="6"
+      paint-order="stroke fill"
+    >少年志</text>
+
+    <path d="M54 52H242L226 70H70L54 52Z" fill="url(#logoHighlight)" opacity="0.72"/>
+    <path d="M218 148H752L722 170H250L218 148Z" fill="url(#logoHighlight)" opacity="0.5"/>
+    <circle cx="712" cy="178" r="12" fill="#FF8B2A" stroke="#FFD8A7" stroke-width="3"/>
+  </g>
+</svg>
