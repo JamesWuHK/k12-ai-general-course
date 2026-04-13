@@ -1,0 +1,23 @@
+{
+  "name": "k12-ai-general-course",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "node ./scripts/generate-html-variants.mjs",
+    "preview": "vite preview",
+    "export:pdf": "npm run build && node ./scripts/export-pdf.mjs",
+    "export:pdf:school": "npm run build && node ./scripts/export-pdf.mjs --audience=school",
+    "export:pdf:institution": "npm run build && node ./scripts/export-pdf.mjs --audience=institution",
+    "export:pdf:all": "npm run build && node ./scripts/export-pdf.mjs && node ./scripts/export-pdf.mjs --audience=school && node ./scripts/export-pdf.mjs --audience=institution"
+  },
+  "dependencies": {
+    "reveal.js": "^5.2.1"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.54.2",
+    "vite": "^6.3.2"
+  }
+}
